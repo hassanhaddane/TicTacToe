@@ -27,3 +27,5 @@ jobs:
       run: |
         # Ajoute ici les commandes pour exécuter tes tests
         echo "Running tests..."
+        # Exemple de test (à remplacer par tes propres tests)
+        docker run --rm your-dockerhub-username/your-image-name:${{ steps.vars.outputs.short_sha }} /bin/sh -c "echo Tests passed"
